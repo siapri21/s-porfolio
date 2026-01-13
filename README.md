@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+# Portfolio Siapri Ouattara
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portfolio moderne et responsive pour développeuse Full Stack & Mobile en recherche d'alternance.
 
-## Available Scripts
+## 🚀 Technologies utilisées
 
-In the project directory, you can run:
+- **React 18** - Framework JavaScript
+- **Tailwind CSS** - Framework CSS utilitaire
+- **Lucide React** - Icônes modernes
+- **Canvas API** - Animations de particules
 
-### `npm start`
+## 📦 Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prérequis
+- Node.js (version 16 ou supérieure)
+- npm ou yarn
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Étapes d'installation
 
-### `npm test`
+1. **Cloner ou créer le projet**
+```bash
+npx create-react-app siapri-portfolio
+cd siapri-portfolio
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Installer les dépendances**
+```bash
+npm install lucide-react
+npm install -D tailwindcss postcss autoprefixer
+```
 
-### `npm run build`
+3. **Initialiser Tailwind CSS**
+```bash
+npx tailwindcss init -p
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Copier tous les fichiers fournis** dans leur emplacement respectif selon la structure du projet
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. **Lancer le projet**
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Le site sera accessible sur `http://localhost:3000`
 
-### `npm run eject`
+## 📁 Structure du projet
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+siapri-portfolio/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Experience.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Contact.jsx
+│   │   └── Footer.jsx
+│   ├── animations/
+│   │   └── ParticleCanvas.jsx
+│   ├── data/
+│   │   ├── projects.js
+│   │   ├── experiences.js
+│   │   └── skills.js
+│   ├── App.jsx
+│   ├── index.js
+│   └── index.css
+├── package.json
+├── tailwind.config.js
+└── README.md
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🎨 Personnalisation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Modifier vos informations
+- **Projets** : Éditez `src/data/projects.js`
+- **Expériences** : Éditez `src/data/experiences.js`
+- **Compétences** : Éditez `src/data/skills.js`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Changer les couleurs
+Modifiez le fichier `tailwind.config.js` dans la section `theme.extend.colors`
 
-## Learn More
+### Ajouter votre photo
+Remplacez l'URL de l'image dans `src/components/Hero.jsx`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🌐 Déploiement
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Netlify
+1. Build command: `npm run build`
+2. Publish directory: `build`
 
-### Code Splitting
+### Vercel
+1. Importez votre repo GitHub
+2. Vercel détectera automatiquement React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### GitHub Pages
+```bash
+npm install gh-pages --save-dev
+```
+Ajoutez dans `package.json`:
+```json
+"homepage": "https://votre-username.github.io/siapri-portfolio",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+```
+Puis: `npm run deploy`
 
-### Analyzing the Bundle Size
+## 📝 TODO
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [ ] Ajouter les vraies images de projets
+- [ ] Ajouter les liens GitHub des projets
+- [ ] Ajouter les liens démo des projets
+- [ ] Optimiser les images
+- [ ] Ajouter Google Analytics
+- [ ] Ajouter un formulaire de contact fonctionnel
 
-### Making a Progressive Web App
+## 👩‍💻 Auteure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Siapri Ouattara**
+- Email: siapriouattara21@gmail.com
+- LinkedIn: [ouattara-siapri](https://www.linkedin.com/in/ouattara-siapri/)
+- GitHub: [siapri](https://github.com/siapri)
 
-### Advanced Configuration
+## 📄 Licence
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ce projet est sous licence MIT.
