@@ -1,27 +1,21 @@
-import React from 'react';
-import './index.css';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Skills from './components/Skills';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import ParticleCanvas from './animations/ParticleCanvas';
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CustomCursor from "./components/layout/CustomCursor";
+import SkipLink from "./components/layout/SkipLink";
+import HomePage from "./pages/HomePage";
+import SailingLocPage from "./pages/SailingLocPage";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-orange-50 to-slate-100 text-gray-800 relative overflow-hidden">
-      <ParticleCanvas />
-      <Navbar />
-      <Hero />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="relative min-h-screen overflow-x-hidden">
+        <SkipLink />
+        <CustomCursor />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/projets/sailingloc" element={<SailingLocPage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

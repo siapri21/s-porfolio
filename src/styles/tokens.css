@@ -1,0 +1,32 @@
+:root {
+  --color-bg: #faf3ea;
+  --color-bg-elevated: #fff8f0;
+  --color-bg-soft: #f3e6d8;
+  --color-ink: #2b211c;
+  --color-ink-muted: #5c4d44;
+  --color-ink-subtle: #8a7a70;
+  --color-primary: #c97d5d;
+  --color-accent: #e8b4a0;
+  --color-cta: #8c4a32;
+  --color-line: rgba(43, 33, 28, 0.12);
+
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", "Segoe UI", sans-serif;
+
+  --space-section: clamp(5rem, 12vw, 9rem);
+  --space-gutter: clamp(1.25rem, 5vw, 4.5rem);
+  --max-width: 72rem;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration: 0.7s;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.75rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration: 0.01ms;
+  }
+}

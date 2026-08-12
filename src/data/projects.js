@@ -1,38 +1,49 @@
-export const projects = [
+﻿export const projects = [
   {
-    title: "Trophenix - Soutien aux Sportifs",
-    description: "Plateforme complète pour accompagner la reconversion professionnelle des athlètes. Site web développé avec React et Node.js, incluant un système d'adhésion et de gestion d'événements.",
+    id: "sailingloc",
+    number: "01",
+    title: "SailingLoc",
+    subtitle: "Plateforme de location de bateaux entre particuliers",
+    featured: true,
+    role: "Cheffe de projet",
+    stack: ["PERN", "Supabase"],
+    liveUrl: "https://dsp-dev-o24a-g4.cloud",
+    sourceUrl: "https://github.com/Netizor/Sailingloc",
+    image: "/img/sailingloc.png",
+  },
+  {
+    id: "trophenix",
+    number: "02",
+    title: "Trophenix",
+    description:
+      "Plateforme de reconversion professionnelle des sportifs : adhésion, événements et parcours de reconversion.",
+    stack: ["React", "Node.js", "Tailwind CSS"],
     image: "/img/trophenix.png",
-    tech: ["React", "Node.js", "Tailwind CSS", "JavaScript"],
-    tags: ["FULL STACK", "WEB", "DESIGN"],
-    github: "", 
-    demo: "https://trophenix-asso.onrender.com/"
+    liveUrl: null,
+    status: null,
   },
   {
-    title: "Zypp - Location de Trottinettes",
-    description: "Application de location de trottinettes électriques à Montpellier. Interface utilisateur moderne avec système de réservation en temps réel et carte interactive des stations.",
+    id: "zypp",
+    number: "03",
+    title: "Zypp",
+    description:
+      "Application de location de trottinettes électriques à Montpellier : réservation en temps réel et carte interactive.",
+    stack: ["React", "JavaScript", "API REST"],
     image: "/img/zypp.png",
-    tech: ["React", "JavaScript", "Tailwind CSS", "API REST"],
-    tags: ["WEB", "MOBILE", "UI/UX"],
-    github: "",
-    demo: "https://zypp-gyt3.vercel.app/"
+    liveUrl: "https://zypp-gyt3.vercel.app/",
+    status: "PROJECT COMPLETED",
+    secondaryStatus: "MOBILE APP IN DEVELOPMENT",
   },
   {
-    title: "Landing Page Agricole",
-    description: "Site vitrine pour une entreprise agricole avec design moderne et responsive. Interface épurée mettant en valeur les produits et services avec des animations fluides.",
-    image: "/img/agricole.png",
-    tech: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
-    tags: ["DESIGN", "LANDING", "RESPONSIVE"],
-    github: "",
-    demo: "https://e-shop-projet.onrender.com/"
+    id: "petitplat",
+    number: "04",
+    title: "PetitPlat",
+    description:
+      "Application mobile dédiée à la diversification alimentaire des bébés, avec chatbot IA.",
+    stack: ["React Native", "Expo"],
+    image: "/img/petitplat.png",
+    liveUrl: null,
+    status: "IN DEVELOPMENT",
   },
-  {
-    title: "Application Mobile Trophenix",
-    description: "Application mobile en React Native pour la gestion des membres et événements. Conception UI/UX complète sur Figma avant développement avec navigation intuitive.",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=500&fit=crop",
-    tech: ["React Native", "Figma", "JavaScript", "Mobile UI"],
-    tags: ["MOBILE", "REACT NATIVE", "UI/UX"],
-    github: "",
-    demo: ""
-  }
 ];
+

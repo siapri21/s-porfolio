@@ -1,130 +1,64 @@
-# Portfolio Siapri Ouattara
+# Portfolio - Siapri Ouattara
 
-Portfolio moderne et responsive pour développeuse Full Stack & Mobile en recherche d'alternance.
+Portfolio éditorial React pour **Siapri Ouattara**, Full-Stack & Mobile Developer.
 
-## 🚀 Technologies utilisées
+## Stack
 
-- **React 18** - Framework JavaScript
-- **Tailwind CSS** - Framework CSS utilitaire
-- **Lucide React** - Icônes modernes
-- **Canvas API** - Animations de particules
+- React 19 (Create React App)
+- Tailwind CSS 3
+- Framer Motion
+- EmailJS (formulaire de contact côté client)
+- Lucide React
 
-## 📦 Installation
+## Installation
 
-### Prérequis
-- Node.js (version 16 ou supérieure)
-- npm ou yarn
-
-### Étapes d'installation
-
-1. **Cloner ou créer le projet**
 ```bash
-npx create-react-app siapri-portfolio
-cd siapri-portfolio
-```
-
-2. **Installer les dépendances**
-```bash
-npm install lucide-react
-npm install -D tailwindcss postcss autoprefixer
-```
-
-3. **Initialiser Tailwind CSS**
-```bash
-npx tailwindcss init -p
-```
-
-4. **Copier tous les fichiers fournis** dans leur emplacement respectif selon la structure du projet
-
-5. **Lancer le projet**
-```bash
+npm install
+cp .env.example .env
+# Renseigner les clés EmailJS publiques dans .env
 npm start
 ```
 
-Le site sera accessible sur `http://localhost:3000`
+## Variables EmailJS
 
-## 📁 Structure du projet
-
-```
-siapri-portfolio/
-├── public/
-│   └── index.html
-├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── Hero.jsx
-│   │   ├── Skills.jsx
-│   │   ├── Experience.jsx
-│   │   ├── Projects.jsx
-│   │   ├── Contact.jsx
-│   │   └── Footer.jsx
-│   ├── animations/
-│   │   └── ParticleCanvas.jsx
-│   ├── data/
-│   │   ├── projects.js
-│   │   ├── experiences.js
-│   │   └── skills.js
-│   ├── App.jsx
-│   ├── index.js
-│   └── index.css
-├── package.json
-├── tailwind.config.js
-└── README.md
+```env
+REACT_APP_EMAILJS_SERVICE_ID=
+REACT_APP_EMAILJS_TEMPLATE_ID=
+REACT_APP_EMAILJS_PUBLIC_KEY=
 ```
 
-## 🎨 Personnalisation
+Template recommandé : variables `from_name`, `from_email`, `message`, `reply_to`.
 
-### Modifier vos informations
-- **Projets** : Éditez `src/data/projects.js`
-- **Expériences** : Éditez `src/data/experiences.js`
-- **Compétences** : Éditez `src/data/skills.js`
+## Scripts
 
-### Changer les couleurs
-Modifiez le fichier `tailwind.config.js` dans la section `theme.extend.colors`
+| Commande | Description |
+|----------|-------------|
+| `npm start` | Dev server |
+| `npm run build` | Build production (`build/`) |
+| `npm test` | Tests |
 
-### Ajouter votre photo
-Remplacez l'URL de l'image dans `src/components/Hero.jsx`
+## Déploiement Render
 
-## 🌐 Déploiement
+Fichier `render.yaml` fourni :
 
-### Netlify
-1. Build command: `npm run build`
-2. Publish directory: `build`
+- **Build command** : `npm install && npm run build`
+- **Publish directory** : `build`
 
-### Vercel
-1. Importez votre repo GitHub
-2. Vercel détectera automatiquement React
+Sur le dashboard Render, définir les variables `REACT_APP_EMAILJS_*` pour le formulaire.
 
-### GitHub Pages
-```bash
-npm install gh-pages --save-dev
+## Structure
+
 ```
-Ajoutez dans `package.json`:
-```json
-"homepage": "https://votre-username.github.io/siapri-portfolio",
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-}
+src/
+├── components/
+│   ├── intro/          # Scène d'arrivée
+│   ├── hero/           # Hero + formes organiques
+│   ├── layout/         # Navbar, Footer, curseur
+│   ├── sections/       # About, How I Work, Work, Toolbox, Contact
+│   ├── projects/       # SailingLoc + projets secondaires
+│   ├── animations/     # Reveal
+│   └── ui/             # Button, Section, Heading
+├── data/               # Contenu (site, projets, case study)
+├── hooks/
+└── lib/emailjs.js
 ```
-Puis: `npm run deploy`
-
-## 📝 TODO
-
-- [ ] Ajouter les vraies images de projets
-- [ ] Ajouter les liens GitHub des projets
-- [ ] Ajouter les liens démo des projets
-- [ ] Optimiser les images
-- [ ] Ajouter Google Analytics
-- [ ] Ajouter un formulaire de contact fonctionnel
-
-## 👩‍💻 Auteure
-
-**Siapri Ouattara**
-- Email: siapriouattara21@gmail.com
-- LinkedIn: [ouattara-siapri](https://www.linkedin.com/in/ouattara-siapri/)
-- GitHub: [siapri](https://github.com/siapri)
-
-## 📄 Licence
-
-Ce projet est sous licence MIT.
