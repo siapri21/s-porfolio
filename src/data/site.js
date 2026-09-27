@@ -5,7 +5,7 @@
   role: "Développeuse Full-Stack & Mobile",
   diploma: "Cheffe de projet, option Full-Stack",
   email: "siapriouattara21@gmail.com",
-  github: "https://github.com/siapri",
+  github: "https://github.com/siapri21",
   linkedin: "https://www.linkedin.com/in/ouattara-siapri/",
   year: 2026,
 };

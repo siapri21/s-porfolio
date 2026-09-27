@@ -19,8 +19,7 @@
       "Plateforme de reconversion professionnelle des sportifs : adhésion, événements et parcours de reconversion.",
     stack: ["React", "Node.js", "Tailwind CSS"],
     image: "/img/trophenix.png",
-    liveUrl: null,
-    status: null,
+    liveUrl: "https://trophenix-asso.onrender.com",
   },
   {
     id: "zypp",
@@ -45,5 +44,27 @@
     liveUrl: null,
     status: "IN DEVELOPMENT",
   },
+  {
+    id: "skillswap",
+    number: "05",
+    title: "SkillSwap",
+    description:
+      "Plateforme d'échange de compétences entre étudiants : profils, matching, sessions et gamification.",
+    context:
+      "Workshop Agile/Scrum de 4 jours à l'Institut F2i, de la commande client à la soutenance.",
+    stack: ["React", "TypeScript", "Node.js"],
+    image: "/img/skillswapp.png",
+    liveUrl: "https://stillwapp.vercel.app/",
+  },
+  {
+    id: "dosanko",
+    number: "06",
+    title: "Dosanko Larmen",
+    description:
+      "Site vitrine du restaurant de ramen Dosanko Larmen, à Paris 2e : accueil, carte, contact et accès.",
+    context: "Conception et développement complets, en autonomie.",
+    stack: ["React", "TypeScript"],
+    image: "/img/dosanko.png",
+    liveUrl: "https://dosanko-larmen.vercel.app/",
+  },
 ];
-

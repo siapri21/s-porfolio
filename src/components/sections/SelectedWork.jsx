@@ -1,4 +1,4 @@
-﻿import Reveal from "../animations/Reveal";
+import Reveal from "../animations/Reveal";
 
 export default function SelectedWork() {
   return (
@@ -12,7 +12,7 @@ export default function SelectedWork() {
           </h2>
           <p className="mt-4 max-w-lg text-sm text-ink-muted md:text-base">
             SailingLoc porte la preuve. Les autres projets montrent
-            l&apos;étendue : web, mobile, produit.
+            l&apos;étendue : produit, mobile, vitrine.
           </p>
         </Reveal>
       </div>

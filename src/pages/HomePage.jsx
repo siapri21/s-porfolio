@@ -12,6 +12,9 @@ import SailingLocFeatured from "../components/projects/SailingLocFeatured";
 import ProjectTrophenix from "../components/projects/ProjectTrophenix";
 import ProjectZypp from "../components/projects/ProjectZypp";
 import ProjectPetitPlat from "../components/projects/ProjectPetitPlat";
+import ProjectSkillSwap from "../components/projects/ProjectSkillSwap";
+import ProjectDosanko from "../components/projects/ProjectDosanko";
+
 import Toolbox from "../components/sections/Toolbox";
 import Contact from "../components/sections/Contact";
 
@@ -60,6 +63,8 @@ export default function HomePage() {
             <ProjectTrophenix />
             <ProjectZypp />
             <ProjectPetitPlat />
+            <ProjectSkillSwap />
+            <ProjectDosanko />
             <Toolbox />
             <Contact />
           </main>
